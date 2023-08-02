@@ -1,5 +1,5 @@
 export default async function Home() {
-  const json_data = await fetch('https://bucket-fetcher.shelbe-ent.workers.dev').then(response => response.json())
+  const json_data = await fetch('https://custom-fetcher.shelbe.cf/').then(response => response.json())
   const companyName = await json_data.companyName
   return (
     <main className="flex min-h-screen flex-col items-center justify-between p-24">
